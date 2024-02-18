@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/49bc86e4ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo_img.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#portfolio">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Engineer</p>
+                <h1>Hello , I'm <span>ASWIN</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------- About section--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/profile pic.png" class="pic1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an computer science and engineer student in sri eshwar college of engineering 
+                        which is located in kinathukadavu.  I consider myself a responsible and orderly person.
+                        I am looking for my first working experience.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                        <p class="tab-links" onclick="opentab('achivement')">Achivements</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming languages</span><br><br>JAVA Programming  ,  C Programming</li>
+                                <li><span>WEB development</span><br><br>Front end development - HTML  ,  CSS  ,  JAVASCRIPT  ,  REACT.JS<br>
+                                    Back end development - MYSQL  ,  MONGODB</li>
+                                <li><span>Designing tools</span><br><br> FIGMA  ,  BLENDER</li><br>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-contents" id="education"> 
+                            <ul>
+                                <li><span>College</span><br>Sri Eshwar College of engineering<br>  
+                                    2021 - 2025<br>
+                                    CGPA - 7.5 
+                                </li>
+                                <li><span>Higher Secondary schooling</span><br>Srinivasa vidhyalaya matric higher secondary school<br> 
+                                    2020 - 2021<br>
+                                    GRADE - 86%
+                                    </li>
+                                <li><span>Secondary schooling</span><br>Srinivasa vidhyalaya matric higher secondary school<br>
+                                    2020 - 2021<br>
+                                    GRADE - 86%
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-contents" id="certificate">
+                            <ul>
+                                <li><span>Udemy</span><br><br>Data structure and algorithm using C</li>
+                                <li><span>Solo learn</span><br><br>My SQL</li>
+                                <li><span>Front - end development</span><br><br>Coursera</li>
+                                <li><span>Basic SQL</span><br><br>Hacker Ranker</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internship">
+                            <ul>
+                                <li><span>Intern</span><br><br>Completed MERN Stack Internship conducted by
+                                    Better Tommorrow</li>
+                                </ul>
+                            </div>
+                        <div class="tab-contents" id="achivement">
+                            <ul>
+                                <li><span>Hackathon</span><br><br>Participated in iTech Hackfest 2023 a National level hackathon which is
+                                    conducted in PSG College of Technology.<br>
+                                    Participate in Smart India Hackathon and selected in College level.
+                                    </li>
+                                <li><span>Workshop</span><br><br>
+                                    ACM Workshop On Research Career in Computer
+                                    science - IIT Palakad <br>
+                                    HackerElite: Expert Session On Cyber Security</li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- Services section --------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Web Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>CHAT TUBE SUMMARISER</h2>
+                    <p> HTML , CSS , React.js , Node.js , Express.js</p>
+                    <a href="#">◕ Developed and designed a user-friendly website that integrates a chatbot capable of answering user queries on a wide
+                        range of topics, enhancing user engagement and providing instant assistance.<br>
+                        ◕ Implemented a YouTube Video Transcript feature that allows users to paste video links, automatically generating
+                        concise summaries of the content, aiding in efficient information retrieval and saving time
+                        </a>
+                </div>
+                <div>
+                    <h2>MELOSTREAM</h2>
+                    <p>React.js , Node.js , Express.js , MongoDB</p>
+                    <a href="#">◕ An advanced music streaming platform allowing users to create and delete playlists within their accounts<br>
+                        ◕ Integrated JioSaavn API to fetch songs and albums, with a robust search feature.
+                        <br>◕ Enables users to seamlessly discover and add tracks to their personalized playlists
+                        </a>
+                </div>
+                <div>
+                    <h2>AI IMAGE GENERATION CLONE</h2>
+                    <p>React.js , Node.js , Express.js , MongoDB</p>
+                    <a href="#">◕ This project aims to create a system capable of generating realistic and diverse images based on text prompts,
+                        similar to the functionality of models like DALL·E.<br>
+                        ◕ The project will leverage the power of deep learning and generative models to generate high-quality images
+                        that match the descriptions provided by users
+                    </a>
+                </div>
+                <div>
+                    <h2>JOBIFY - IN PROGRESS</h2>
+                    <p>HTML , CSS , JAVASCRIPT</p>
+                    <a href="#">◕ Experienced in tracking and analyzing candidate data to optimize hiring
+                        practices and increase efficiency.<br>
+                        ◕ Capable of streamlining communication between hiring managers and
+                        candidates to ensure a positive experience.
+                        <br>◕ Skilled in utilizing technology and data analysis to improve the overall
+                        recruitment process.
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- Portfolio --------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">MY Work</h1>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('project1')">Project 1</p>
+                <p class="tab-links" onclick="opentab('project2')">Project 2</p>
+                <p class="tab-links" onclick="opentab('project3')">Project 3</p>
+            </div>
+            <div>
+                <div class="tab-contents active-tab" id="project1">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="./images/project2/login.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project2/prj - 2 image 1.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project2/prj - 2 image 2.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project2/prj - 2 image 6.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project2/prj - 2 image 4.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project2/prj - 2 image 3.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project2/prj - 2 image 7.png" class="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="project2">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="./images/project3/image1.jpg" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project3/image2.jpg" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project3/image3.jpg" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project3/image4.jpg" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project3/image5.jpg" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project3/image6.jpg" class="image">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tab-contents" id="project3">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="./images/project1/image 1.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project1/image 2.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project1/image 3.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project1/image 4.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/project1/image 5.png" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div id="blender">
+        <div class="container">
+            <h1 class="sub-title">MY BLENDER WORKS</h1>
+            <div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('projects')">Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id="projects">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="./images/blender works/image1.jpg" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/blender works/image2.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/blender works/image3.png" class="image">
+                        </div>
+                        <div class="work">
+                            <img src="./images/blender works/image4.png" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- contact ---------/ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>aswinarumuagam210@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9025267635</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a herf="https://www.linkedin.com/in/aswin-arumugam-b6a530242"><i class="fa-brands fa-linkedin"></i></a>
+                        <a herf="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Sumit</button>
+                    </form>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
